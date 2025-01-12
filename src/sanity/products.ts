@@ -15,7 +15,7 @@ export const productType = {
             options: {
                 source: 'name',
                 maxLength: 200, // will be ignored if slugify is set
-                slugify: input => input
+                slugify: (input: string) => input
                     .toLowerCase()
                     .replace(/\s+/g, '-')
                     .slice(0, 200)
